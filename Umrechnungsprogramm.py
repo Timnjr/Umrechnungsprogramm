@@ -62,8 +62,9 @@ while True:
     
     #Antwort auf ungültige Option
     else:
-        print("Ungültige Option!")
-    
+        print("Ungültige Option! Bitte gebe eine der Optionen von '0' bis '5' ein!")
+            
+
     #Abfrage, ob der Nutzer zurück ins Menü möchte.
     while True:
         back_to_menu = input("Möchtest du eine weitere Umrechnung durchführen? [J]/[N] \n").upper()
