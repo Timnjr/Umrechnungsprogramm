@@ -1,3 +1,9 @@
+#Variablen definieren urf steht hier immer für umrechnungsfaktor
+urf_bar_pa = 100000
+urf_ms_kmh = 3.6
+urf_km_mi = 1.609
+urf_cm_zoll = 2.54
+
 #Begrüßung des Nutzers
 print("Willkommen im Umrechnungsprogramm!")
 
@@ -25,7 +31,6 @@ while True:
     elif eingabe == 1:
         print("Du möchtest Bar zu Pascal umrechnen.")
         bar = float(input("Gib deinen Wert in Bar ein: "))
-        urf_bar_pa = 100000
         pascal = bar * urf_bar_pa
         print(bar, "Bar sind", pascal, "Pascal.")
     
@@ -33,7 +38,6 @@ while True:
     elif eingabe == 2:
         print("Du möchtest Meter pro Sekunde in Kilometer pro Stunde umrechnen.")
         m_s = float(input("Gib deinen Wert in m/s ein: "))
-        urf_ms_kmh = 3.6
         km_h = m_s * urf_ms_kmh
         print(m_s, "m/s sind", km_h, "km/h.")
     
@@ -41,7 +45,6 @@ while True:
     elif eingabe == 3:
         print("Du möchtest Kilometer zu Meilen umrechnen.")
         km = float(input("Gib deinen Wert in km ein: "))
-        urf_km_mi = 1.609
         mi = km / urf_km_mi
         print(km, "km sind", mi, "Meilen.")
     
@@ -56,7 +59,6 @@ while True:
     elif eingabe == 5:
         print("Du möchtest Zentimeter zu Zoll umrechnen.")
         cm = float(input("Gib deinen Wert in cm ein: "))
-        urf_cm_zoll = 2.54
         zoll = cm / urf_cm_zoll
         print(cm, "cm sind", zoll, "Zoll.")
     
